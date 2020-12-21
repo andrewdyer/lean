@@ -1,0 +1,43 @@
+{
+    "name": "andrewdyer/lean",
+    "description": "Use the league/container with auto-wiring support as the core container in Slim 3",
+    "keywords": [
+        "league",
+        "slim",
+        "container"
+    ],
+    "homepage": "https://github.com/andrewdyer/lean",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Dyer",
+            "homepage": "https://jenssegers.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Anddye\\Lean\\": "src/Lean",
+            "Slim\\": "src/Slim"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Anddye\\Lean\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "slim/slim": "^3.0",
+        "league/container": "3.2.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.2"
+    },
+    "scripts": {
+        "cs": [
+            "vendor/bin/php-cs-fixer fix"
+        ]
+    }
+}
